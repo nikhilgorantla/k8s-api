@@ -12,7 +12,7 @@ kubectl proxy --port=8080
 curl localhost:8080/openapi/v2 > k8s-swagger.json
 ```
 
-### Browsing API on Swagger UI 
+### Swagger UI 
 
 ```
 docker run --rm -p 80:8080 \
@@ -20,21 +20,17 @@ docker run --rm -p 80:8080 \
       -v (pwd)/k8s-swagger.json:/k8s-swagger.json \
       swaggerapi/swagger-ui
 ```
-### Browse on 
 ```
 http://localhost/
 ```
 
-### Browsing API on ReDoc 
+### ReDoc 
 
 ```
 docker run -it --rm -p 8080:80 \
           -v (pwd)/k8s-swagger.json:/usr/share/nginx/html/k8s-swagger.json \
           -e SPEC_URL=/k8s-swagger.json redocly/redoc
 ```
-
-### Browse on 
-
 ```
 http://localhost:8080/
 ```
