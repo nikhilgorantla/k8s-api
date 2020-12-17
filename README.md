@@ -1,6 +1,4 @@
-# Kubernetes-api
-
-## How to View Kubernetes api with Swagger or ReDoc
+# How to View Kubernetes api with Swagger or ReDoc
 
 ### Start a reverse proxy to kubernetes api server 
 
